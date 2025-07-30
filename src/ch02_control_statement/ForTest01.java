@@ -5,8 +5,7 @@ public class ForTest01 {
         int dan = 3 ;
 
         for (int i = 1 ; i < 10 ; i++) {
-            String message = dan + " * " + i + " = " + "(dan *)" ;
-             dan = 3 * i * i ;
+            String message = dan + " * " + i + " = " + (dan*i) ;
             System.out.println(message);
         }
 

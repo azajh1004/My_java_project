@@ -17,7 +17,6 @@ public class Exam4_18 {
         for (int i = su01 ; i <= su02 ; i++) {
             total += i;
         }
-            System.out.println("합계 : " + total);
-
+        System.out.println("합계 : " + total);
     }
 }

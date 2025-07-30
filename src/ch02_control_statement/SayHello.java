@@ -6,7 +6,6 @@ public class SayHello {
         int su = 5;
 
         for (int i = 1; i <= su; i++) {
-
             System.out.println(message);
 
         }
