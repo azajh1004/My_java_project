@@ -1,6 +1,6 @@
 package ch1_variable_operator;
 
-public class Printing {
+public class PrintMe {
     public static void main(String[] args) {
         String name ;
         int age ;

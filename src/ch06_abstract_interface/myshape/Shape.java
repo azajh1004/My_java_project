@@ -1,0 +1,30 @@
+package ch06_abstract_interface.myshape;
+// super class, abstract class
+public abstract class Shape {
+    // 일반화 : 모든 도형에서 사용하는 면적, 둘레, 라인 색상, 채우기 색상등은 super 에서 사용.
+    protected double area; // 면적
+    protected double perimeter; //도형의 둘레
+    private String linecolor; //라인 색상
+    private String fillcolor; // 채우기 색상
+
+    public Shape() {
+
+    }
+
+    // 내용이 정의되지 않는 모델 개념으로, 불완전한 매소드 입니다.
+    public abstract double calcArea(); // 면적 구하기 추상
+    public abstract double calcPerimeter();
+    public abstract void display();
+
+    // final 메소드는 오버라이딩을 하지 못하도록 막고자 할 때 사용
+    protected final void draw(){
+        System.out.println("라인 색상 : " + this.linecolor);
+        System.out.println("채우기 색상 : " + this.fillcolor);
+    }
+
+    public Shape(String fillcolor, String linecolor) {
+        this.fillcolor = fillcolor;
+        this.linecolor = linecolor;
+
+    }
+}

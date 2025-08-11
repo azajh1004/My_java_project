@@ -17,4 +17,14 @@ public class ShapeArea {
 
         }
 
+        public void are(int radius) {
+                final double PI = 3.141593;
+                double area = PI * (radius * radius) ;
+                System.out.println("원의 넓이 = " + area );
+        }
+
+        public void are(int width, int height) {
+                int area = (width * height);
+                System.out.println("사각형의 넓이 = " + area);
+        }
 }
